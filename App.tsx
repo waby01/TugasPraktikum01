@@ -19,15 +19,6 @@ const PalindromeChecker = () => {
 
   return (
     <View style={styles.container}>
-      <TextInput
-        style={styles.input}
-        placeholder="Masukkan teks di sini"
-        onChangeText={(text) => setInputText(text)}
-        value={inputText}
-      />
-      <Button title="Periksa" onPress={checkPalindrome} />
-      {isPalindrome && <Text style={styles.result}>Ini adalah palindrome!</Text>}
-      {!isPalindrome && <Text style={styles.result}>Ini bukan palindrome.</Text>}
       <Image
         style={{
           width: 240,
@@ -37,6 +28,15 @@ const PalindromeChecker = () => {
           uri: "https://beebom.com/wp-content/uploads/2024/02/firefly-and-trailblazer-honkai-star-rail.jpg?w=1024"
         }}
         />
+      <TextInput
+        style={styles.input}
+        placeholder="Masukkan teks di sini"
+        onChangeText={(text) => setInputText(text)}
+        value={inputText}
+      />
+      <Button title="Periksa" onPress={checkPalindrome} />
+      {isPalindrome && <Text style={styles.result}>Ini adalah palindrome!</Text>}
+      {!isPalindrome && <Text style={styles.result}>Ini bukan palindrome.</Text>}
     </View>
   );
 };
