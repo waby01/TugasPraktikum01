@@ -6,7 +6,7 @@
  */
 
 import React, { useState } from 'react';
-import { View, TextInput, Button, Text, StyleSheet } from 'react-native';
+import { View, TextInput, Button, Text, StyleSheet, Image } from 'react-native';
 
 const PalindromeChecker = () => {
   const [inputText, setInputText] = useState('');
@@ -28,6 +28,15 @@ const PalindromeChecker = () => {
       <Button title="Periksa" onPress={checkPalindrome} />
       {isPalindrome && <Text style={styles.result}>Ini adalah palindrome!</Text>}
       {!isPalindrome && <Text style={styles.result}>Ini bukan palindrome.</Text>}
+      <Image
+        style={{
+          width: 240,
+          height: 240,
+        }}
+        source= {{
+          uri: "https://www.google.com/imgres?q=ice%20nine%20kills%20&imgurl=https%3A%2F%2Fphotos.bandsintown.com%2Flarge%2F15778768.jpeg&imgrefurl=https%3A%2F%2Ficeninekills.com%2F&docid=abcwF1Fbo32qhM&tbnid=tQuPvVYeBp5rNM&vet=12ahUKEwjflerT4fuFAxXjzTgGHWzGDrIQM3oECBUQAA..i&w=720&h=720&hcb=2&ved=2ahUKEwjflerT4fuFAxXjzTgGHWzGDrIQM3oECBUQAA"
+        }}
+        />
     </View>
   );
 };
