@@ -34,7 +34,7 @@ const PalindromeChecker = () => {
           height: 240,
         }}
         source= {{
-          uri: "https://www.google.com/imgres?q=ice%20nine%20kills%20&imgurl=https%3A%2F%2Fphotos.bandsintown.com%2Flarge%2F15778768.jpeg&imgrefurl=https%3A%2F%2Ficeninekills.com%2F&docid=abcwF1Fbo32qhM&tbnid=tQuPvVYeBp5rNM&vet=12ahUKEwjflerT4fuFAxXjzTgGHWzGDrIQM3oECBUQAA..i&w=720&h=720&hcb=2&ved=2ahUKEwjflerT4fuFAxXjzTgGHWzGDrIQM3oECBUQAA"
+          uri: "https://beebom.com/wp-content/uploads/2024/02/firefly-and-trailblazer-honkai-star-rail.jpg?w=1024"
         }}
         />
     </View>
